@@ -1,0 +1,13 @@
+.c-logo {
+    display: block;
+
+    &--public {
+        margin: 72px 0 24px;
+        width: 220px;
+
+        @include mq($sm) {
+            margin: 0 0 64px;
+            width: 280px;
+        }
+    }
+}

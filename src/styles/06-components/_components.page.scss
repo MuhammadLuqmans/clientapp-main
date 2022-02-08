@@ -1,0 +1,50 @@
+.c-page {
+    padding: 100px 16px 0;
+
+    @include mq($lg) {
+        padding: 100px 48px 0;
+    }
+
+    &--flex-wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &--login {
+        padding: 0;
+        height: 100vh;
+
+        @include mq($sm) {
+            padding: 0;
+        }
+    }
+
+    &__public-content {
+        padding: 0 48px;
+
+        @include mq($sm) {
+            width: 65%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @include mq($lg) {
+            width: 50%;
+        }
+    }
+
+    &__public-promo {
+        padding: 0;
+        width: 100%;
+
+        @include mq($sm) {
+            position: relative;
+            width: 35%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        @include mq($lg) {
+            width: 50%;
+        }
+    }
+}

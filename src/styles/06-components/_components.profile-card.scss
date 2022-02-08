@@ -1,0 +1,111 @@
+.c-profile-card {
+    padding: 16px;
+    margin: 24px auto;
+    background-color: $white;
+    max-width: 210px;
+
+    @include mq($lg) {
+        max-width: 180px;
+        width: 100%;
+        position: absolute;
+        z-index: 2;
+
+        &:nth-child(1) {
+            top: 2%;
+            left: 18%;
+        }
+
+        &:nth-child(2) {
+            top: 26%;
+            right: 10%;
+        }
+
+        &:nth-child(3) {
+            bottom: 5%;
+            left: 26%;
+        }
+    }
+
+    @include mq($xl + 1600px) {
+        &:nth-child(1) {
+            top: 10%;
+            left: 14%;
+        }
+
+        &:nth-child(2) {
+            top: 36%;
+            right: 10%;
+        }
+
+        &:nth-child(3) {
+            bottom: 10%;
+            left: 14%;
+        }
+    }
+
+    &--small {
+        max-width: 180px;
+
+        @include mq($lg) {
+            max-width: 150px;
+        }
+
+        @include mq($xl + 1600px) {
+            max-width: 180px;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    &__circle-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 24px auto;
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+        background: linear-gradient(195.42deg, #25A9E0 10.81%, #1881AD 95.15%);
+
+        @include mq($lg) {
+            margin: 12px auto;
+            width: 80px;
+            height: 80px;
+        }
+
+        @include mq($xl + 1600px) {
+            margin: 24px auto;
+        }
+    }
+
+    &__circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        height: 70%;
+        border-radius: 100%;
+        overflow: hidden;
+        background-color: $white;
+    }
+
+    &__photo {
+        display: block;
+        width: 80%;
+        border-radius: 100%;
+    }
+
+    &__organization {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+        color: $grey-light;
+    }
+
+}

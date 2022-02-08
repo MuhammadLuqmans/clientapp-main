@@ -1,0 +1,13 @@
+.c-validation-alert {
+    margin-bottom: 8px;
+    display: grid;
+    grid-template-columns: 40px auto;
+
+    &--success {
+        color: $green-dark;
+    }
+
+    &--error {
+        color: $red;
+    }
+}

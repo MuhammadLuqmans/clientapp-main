@@ -1,0 +1,22 @@
+.o-container {
+    width: 100%;
+    padding: 0 8px;
+
+    @include mq($lg) {
+        max-width: 1100px;
+    }
+
+    @include mq($lg) {
+        max-width: 1366px;
+    }
+}
+
+.o-container-small {
+    width: 100%;
+    padding: 0 8px;
+
+    @include mq($sm) {
+        margin: auto;
+        max-width: 400px;
+    }
+}

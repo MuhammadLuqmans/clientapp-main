@@ -1,0 +1,33 @@
+.c-trades {
+    
+}
+
+.c-trades-row {
+    margin-top: 64px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        padding: 8px;
+        margin-bottom: 8px;
+        border: 1px solid $grey;
+        border-radius: 4px;
+    }
+
+    &__item-title {
+        padding: 4px;
+        margin-right: 8px;
+        border: 1px solid $blue;
+        border-radius: 4px;
+    }
+
+    &__item-tick {
+        padding: 4px;
+        margin-right: 8px;
+    }
+
+    &__item-delete {
+        padding: 4px;
+        margin-left: auto;
+    }
+}

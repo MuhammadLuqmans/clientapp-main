@@ -1,0 +1,40 @@
+.c-poster {
+    display: none;
+
+    @include mq($sm) {
+        position: relative;
+        display: block;
+        width: 100%;
+        background-color: $blue;
+        background: linear-gradient(180deg, #25A9E0 0%, #1079A5 79.93%);
+    }
+
+    @include mq($lg) {
+        height: calc(100vh - 248px);
+    }
+
+    &__logo-fragment {
+        display: none;
+
+        @include mq($lg) {
+            display: block;
+            max-width: 400px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+    }
+
+    &__triangle {
+        display: none;
+
+        @include mq($lg) {
+            display: block;
+            width: 40%;
+            position: absolute;
+            top: 15%;
+            left: 30%;
+        }
+    }
+}

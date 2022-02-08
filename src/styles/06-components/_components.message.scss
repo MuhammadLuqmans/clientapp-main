@@ -1,0 +1,37 @@
+.c-message {
+    &__icon {
+        display: flex;
+        justify-content: center;
+        
+        svg {
+            width: 56px;
+        }
+
+        &--100 {
+            svg {
+                fill: $green;
+            }
+        }
+
+        &--104 {
+            svg {
+                fill: $red;
+            }
+        }
+        
+    }
+
+    &__text {
+        padding: 32px 16px 0;
+        font-size: 1rem;
+        font-weight: 300;
+
+        &--100 {
+            color: $green;
+        }
+
+        &--104 {
+            color: $red;
+        }
+    }
+}

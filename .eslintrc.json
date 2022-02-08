@@ -1,0 +1,60 @@
+{
+  "settings": {
+    "react": {
+      "version": "latest"
+    }
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",    
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript"
+  ],
+  "plugins": ["react-hooks"],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    ],
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": 0,
+    "no-var": 2,
+    "prefer-const": "error",
+    "no-underscore-dangle": 0,
+    "import/imports-first": ["error", "absolute-first"],
+    "import/newline-after-import": "error",
+    "semi": [2, "always"],
+    "react/jsx-props-no-spreading": 0,
+    "react-hooks/rules-of-hooks": "error",
+    "import/no-extraneous-dependencies": 0,
+    "no-shadow": 0,
+    "import/no-unresolved": [
+      2,
+      { "caseSensitive": false, "ignore": ["@axa-fr/react-oidc-context"] }
+    ],
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off"
+  },
+  "globals": {
+    "window": true,
+    "document": true,
+    "localStorage": true,
+    "FormData": true,
+    "FileReader": true,
+    "Blob": true,
+    "navigator": true
+  }
+}

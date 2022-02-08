@@ -1,0 +1,13 @@
+.c-btn {
+    &--primary {
+        background-color: $green;
+    }
+
+    &--secondary {
+        background-color: $blue;
+    }
+}
+
+.MuiButton-containedSecondary {
+    background-color: $blue;
+}

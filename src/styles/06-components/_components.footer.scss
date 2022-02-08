@@ -1,0 +1,37 @@
+.c-footer-public {
+    margin-top: 64px;
+    width: 100%;
+    padding: 48px;
+    background-color: $black-light;
+    color: $white;
+
+    @include mq($sm) {
+        padding: 24px;
+        margin-top: 0;
+    }
+
+    &__title {
+        margin: 0 0 8px;
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 700;
+    }
+
+    &__text {
+        margin: 0 0 16px;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 400;
+
+        a {
+            color: $white;
+            text-decoration: none;
+        }
+    }
+
+    &__moto {
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+}
+
